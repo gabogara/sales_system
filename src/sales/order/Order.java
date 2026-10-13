@@ -29,14 +29,17 @@ public class Order {
         return totalOrder;
     }
 
-    public void showOrder() {
-        System.out.println("Order ID: " + this.orderId);
-        System.out.println("Total Price: " + this.getTotalPrice());
-        System.out.println("Total Quantity: " + this.counterProducts);
-        System.out.println("\tProduct Details: ");
+
+
+    public String toString() {
+        String result = "Order ID: " + this.orderId + "\n";
+        result += "Total Price: " + this.getTotalPrice() + "\n";
+        result += "Total Quantity: " + this.counterProducts + "\n";
+        result += "\tProduct Details: " + "\n";
         for (int i = 0; i < this.counterProducts; i++) {
-            System.out.println(products[i]);
+            result += "\t\t" + this.products[i] + "\n";
         }
+        return result;
     }
 
 

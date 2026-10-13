@@ -27,10 +27,11 @@ public class App {
         order.addProduct(product8);
         order.addProduct(product9);
        // order.addProduct(product10);
-        order.showOrder();
+        System.out.println(order);
         Order order2 = new Order();
         order2.addProduct(product1);
         order2.addProduct(product2);
+        System.out.println(order2);
 
     }
 }

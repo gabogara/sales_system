@@ -4,13 +4,12 @@ public class Product {
     private final int idProduct;
     private String productName;
     private double productPrice;
-    private static int counterProducts = 0;
+    private static int counterProducts;
 
 
     public Product(String productName, double productPrice) {
         this.productName = productName;
         this.productPrice = productPrice;
-        counterProducts++;
         this.idProduct = ++Product.counterProducts;
     }
     public int getIdProduct() {
